@@ -19,7 +19,7 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "name", nullable = false, length = 30)
+	@Column(name = "name", nullable = false, length = 20)
 	private String name;
 
 	@ManyToMany(mappedBy = "products")
